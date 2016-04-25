@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+      nav.header
+          ul.list
+              li.logo
+                  a(href='/') Microblog
+              li
+                  a(href='/') 首页
+              li
+                  a(href='/login') 登录
+              li
+                  a(href='/reg') 注册
+       div.container
+           block content
+           h1 hello
+           img(width="100",height="100",src="/images/message.png")
+           form(method="get",action="/login")  
+               input(type="text" name="capt")
+               input(type="submit")
+           hr
+           footer.footer
+               p
+                   a(href='http://myzhibie.coding.io') myzhibie
+                   | @2015
